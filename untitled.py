@@ -129,6 +129,7 @@ def gen_wav_residual(x,NList,bunch_pts,shift,sigmas,kappa,c_vec,xList,yList):
     f = genCollocationPts(xList,yList,np.array([x]))[0]
     g = wavSolution(x,NList,bunch_pts,shift,sigmas,kappa,c_vec)
     return(f-g)
+
 def gen_f_pt_wav_squared(x,xList,yList):
     result = genCollocationPts(xList,yList,np.array([x]))[0]
     return(result**2)
